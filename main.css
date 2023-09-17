@@ -242,6 +242,7 @@ footer{
     left: 0;
     bottom: 0;
     position: sticky;
+    display:inline-table;
     
     
 }
