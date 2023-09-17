@@ -1,0 +1,330 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo_section{
+    display: flex;
+}
+
+.logo{
+   
+    width: 50%;
+    padding: 15px;
+
+
+}
+.logo img{
+    width:60%;
+    /* border:  3px solid white;
+    border-radius: 70px; */
+    
+
+}
+.g20logo{
+    padding:30px ;
+    padding-right: 20px;
+    width: 20%;
+}
+.g20logo img{
+    width: 150px;
+}
+.swacch{
+    padding:20px ;
+    padding-left: 25px;
+    width: 15%;
+    
+}
+.swacch img{
+    width: 150px;
+}
+.logo_nit{
+    width: 30%;
+    padding: 20px;
+   
+
+}
+.logo_nit img{
+    width: 25%;
+     float:right;
+     
+} 
+.navbar{
+    background-color: #303983;
+    padding-left: 5px;
+    padding-right: 5px;
+    position:sticky ;
+    top:0;
+    width:100vw;
+    
+}
+.nav_list{
+  width: 100%;
+  /* background-color: #303983; */
+  background-blend-mode: darken;
+  display: flex;
+ 
+  justify-content: center;
+ 
+  
+}
+.nav_list li{
+    list-style: none;
+    padding: 26px 45px;
+   
+
+
+}
+
+.nav_list li a{
+   
+    color: white;
+    text-decoration: none;
+    
+
+}
+.nav_list li a:hover{
+    display: block;
+    box-sizing: border-box;
+    background-color: red;
+    transition: 0.3s;
+
+   
+}
+
+
+.main_section{
+    display: flex;
+}
+.firsthalf{
+    padding: 25px;
+    padding-top: 32px;
+    float: left;
+    
+}
+.heading{
+    font-size: 30px;
+    white-space: nowrap;
+    padding:10px;
+    color:#303983;
+    font-weight:500 ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.smalltxt{
+    white-space: nowrap;
+    padding :5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#303983;
+}
+.secondhalf{
+    padding: 45px;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+.latest{
+    display: flex;
+    font-family: sans-serif;
+    max-width:50%;
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+    
+}
+.latest li{
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+
+}
+.latest li a{
+    text-decoration: none;
+}
+.latest_events ,.notice{
+
+  width: 300px;
+  height: 200px;
+  border: 5px solid #303983;
+  margin: 20px;
+    
+}
+.latest_events p{
+    
+    color: white;
+    font-size:25px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    border:transparent;
+    background-color: #303983;
+  
+}
+
+.notice p{
+    color: white;
+    font-size:25px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    border:transparent;
+    background-color: #303983;
+}
+.notice li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.gallery{
+    display: flex;
+    font-family: sans-serif;
+    margin:auto;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    
+
+}
+
+.img{
+   
+    padding: 0px;
+    border:5px solid #303983;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color:black;
+    margin: 10px;
+    
+}
+.img p{
+    margin-top: 10px;
+    margin: bottom 10px;
+}
+.img p a{
+    text-decoration: none;
+    color: black;
+}
+.img p a:hover{
+    background-color: red;
+    height: 100%;
+    color: white;
+    padding:.5%;
+    
+  transition: 0.3s;
+}
+img{
+    
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.foot{
+   
+    padding-top: 10px;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    
+}
+.foot li{
+    padding: 20px;
+   
+    list-style: none;
+}
+.foot li a{
+    text-decoration: none;
+    color: white;
+}
+footer{
+    
+    width: 100%;
+    height: 80px;
+    padding-bottom: 0;
+    background-image: url("../images/footer-bottom-bg.jpg");
+    left: 0;
+    bottom: 0;
+    position: sticky;
+    display: inline-table;
+    
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;;
+    top: 15px;
+    display: none;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin:5px 5px;
+}
+@media screen and (max-width: 800px) {
+    .nav_list {
+     flex-direction: column;
+     opacity: 0.7;
+     justify-content: center;
+     align-items: center;
+     
+    }
+    .navbar{
+        transition: all 0.3s ease-out ;
+        height: 300px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .latest{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+       
+        
+    }
+    
+    .g20logo{
+        display: none;
+    
+    }
+    .logo_nit{
+        width: 50%;
+        float: right;
+    }
+    .swacch{
+        display: none;
+    }
+    
+  }
+  @media screen and (max-width: 600px){
+    .main_section{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+    .firsthalf{
+        font-weight: 600;
+        font-size: 28px;
+        justify-content: center;
+        text-align: center;
+    }
+    .secondhalf{
+        justify-content: center;
+        text-align: center;
+    }
+    .gallery{
+        flex-direction: column;
+        width: 50%;
+        
+    }
+
+  }
